@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishna Kankotiya - Full-Stack Developer</title>
+
+<!-- Typed.js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"></script>
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<video autoplay loop muted playsinline class="bg-video">
+  <source src="background.mp4" type="video/mp4">
+</video>
+
+<nav>
+  <div class="logo">Krishna Kankotiya</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <!-- NEW: Hamburger Toggle Button -->
+  <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+</nav>
+
+<section id="hero" class="hero">
+  <div class="hero-inner">
+    <div class="hero-content-left" data-aos="fade-right">
+      <h1>Krishna Kankotiya</h1>
+      <h2><span id="typed-text"></span></h2>
+      <p>Building interactive web apps using <strong>MERN Stack.</strong><br>
+      Clean UI/UX, scalable code, and creative solutions for modern web experiences.</p>
+      <div class="hero-buttons">
+        <a href="https://drive.google.com/file/d/1XF54H29zLgOcpRozE71E9tNlhv-bHDpv/view?usp=sharing" class="btn btn-primary">View Resume</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    
+    <div class="hero-image-right" data-aos="fade-left">
+      <div class="profile-pic-container">
+          <!-- Make sure 'photo.jpeg' is accessible for this image to display -->
+          <img src="photo.jpeg" alt="Krishna Kankotiya Profile" class="profile-pic">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section" data-aos="fade-up">
+  <h3 class="section-title">About Me</h3>
+  <div class="card">
+    <p>Hello! I’m <strong>Krishna Kankotiya</strong>, a passionate Full-Stack Web Developer specializing in the <strong>MERN stack</strong>. Currently pursuing B.Tech in Computer Engineering.<br><br>
+    I enjoy creating clean, responsive, and interactive websites that combine modern aesthetics with high-performance functionality.<br>
+    I love transforming ideas into seamless web experiences and continuously learning new technologies to build scalable and innovative solutions.</p>
+  </div>
+
+  <div class="info-boxes">
+    <div class="info-box">
+      <h4>Scalability</h4>
+      <p>Building systems that handle growth and high traffic loads.</p>
+    </div>
+    <div class="info-box">
+      <h4>User Focus</h4>
+      <p>Committed to designing intuitive and accessible user interfaces.</p>
+    </div>
+    <div class="info-box">
+      <h4>Agile Delivery</h4>
+      <p>Proficient in Agile methodologies, ensuring timely and iterative feature releases.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section" data-aos="fade-up">
+  <h3 class="section-title">Projects</h3>
+  <div id="repo-list" class="grid grid-3"><p style="text-align:center;color:#888;">Loading projects...</p></div>
+  <div style="text-align:center; margin-top:2rem;">
+    <button id="toggle-projects-btn" class="btn btn-primary">View More Projects</button>
+  </div>
+</section>
+
+<section id="certificates" class="section" data-aos="fade-up">
+  <h3 class="section-title">Certificates</h3>
+  <div class="certificate-grid">
+    <div class="certificate-card">
+      <img src="https://i.postimg.cc/k4B0FbSX/freecodecamp.png" alt="Responsive Web Design Certificate">
+      <div class="certificate-info">
+        <h4>Responsive Web Design</h4>
+        <p><strong>Issuer:</strong> freeCodeCamp</p>
+        <p><strong>ID:</strong> krishna-2121-rwd</p>
+        <a href="https://drive.google.com/file/d/18rsafGZcXUy452UX_nt2zNX5lKWvDUlY/view?usp=sharing" target="_blank" class="view-btn">View Certificate</a>
+      </div>
+    </div>
+    <div class="certificate-card">
+      <img src="https://i.postimg.cc/L6BbPTW3/unstop.png" alt="Web Development Internship">
+      <div class="certificate-info">
+        <h4>Web Development Internship</h4>
+        <p><strong>Issuer:</strong> Unstop</p>
+        <p><strong>ID:</strong> 822396f6</p>
+        <a href="https://unstop.com/certificate-preview/822396f6-3a04-4529-9401-6a5fbf92da16?utm_campaign=site-emails" target="_blank" class="view-btn">View Certificate</a>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:2rem; text-align:center;">
+    <a href="https://drive.google.com/drive/folders/1lig8zMDu8YOUDctzW5fQHgDu2u6aboEl?usp=sharing" target="_blank" class="btn btn-primary">
+      See More Certificates
+    </a>
+  </div>
+</section>
+
+<section id="contact" class="section" data-aos="fade-up">
+  <h3 class="section-title">Let's Connect</h3>
+  <p style="text-align:center; max-width:600px; margin:0 auto 2rem;">
+    I am currently open to new opportunities and collaborations. Feel free to reach out to discuss potential projects or roles.
+  </p>
+
+  <div class="contact-grid" style="display:grid; gap:1.5rem; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));">
+    <div class="contact-card card">
+      <h4>LeetCode</h4>
+      <p>krishna-kankotiya</p>
+      <a href="https://leetcode.com/u/krishna-kankotiya/" target="_blank" class="view-btn">Visit Profile</a>
+    </div>
+
+    <div class="contact-card card">
+      <h4>Phone</h4>
+      <p>+91 83205 20601</p>
+      <a href="tel:+918320520601" class="view-btn">Call Now</a>
+    </div>
+
+    <div class="contact-card card">
+      <h4>LinkedIn</h4>
+      <p>krishnakankotiya</p>
+      <a href="https://www.linkedin.com/in/krishnakankotiya" target="_blank" class="view-btn">Visit Profile</a>
+    </div>
+
+    <div class="contact-card card">
+  <h4>Email</h4>
+  <p>krishna.kankotiya3@gmail.com</p> 
+  <a href="mailto:krishna.kankotiya3@gmail.com?subject=Inquiry%20from%20Portfolio%20Website" target="_blank" class="view-btn">
+    Send Email
+  </a>
+</div>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; <span id="year"></span> Krishna Kankotiya</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
